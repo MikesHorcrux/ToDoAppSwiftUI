@@ -24,11 +24,25 @@ struct ContentView: View {
                     HStack{
                         TextField("new ToDo..", text: self.$newToDoItem)
                         Button(action: {
+                            let toDoItem = ToDoItem(context: self.managedObjectContext)
+                            toDoItem.title = self.newToDoItem
+                            toDoItem.createdAt = Date()
                             
+                            do{
+                                try self.managedObjectContext.save()
+                            }catch{
+                                print(error)
+                            }
+                            self.newToDoItem = " "
                         }){
                             Image(systemName: "plus.circle")
                             .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                         }
+                    }
+                }
+                Section(header: Text("To Do(s)")){
+                    ForEach(self.toDoItems){
+                        toDoItem in ToDoItemView(title: toDoItem.title!, createdAt: "\(toDoItem.createdAt!)")
                     }
                 }
             }

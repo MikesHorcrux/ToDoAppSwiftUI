@@ -15,6 +15,7 @@
 		A1C674CD2385BE56003AAC2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C674CC2385BE56003AAC2D /* Preview Assets.xcassets */; };
 		A1C674D02385BE56003AAC2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C674CE2385BE56003AAC2D /* LaunchScreen.storyboard */; };
 		A1C674DA2385C0BD003AAC2D /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C674D92385C0BD003AAC2D /* ToDoItem.swift */; };
+		A1C674DC2385FB14003AAC2D /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C674DB2385FB14003AAC2D /* ToDoItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A1C674CF2385BE56003AAC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1C674D12385BE56003AAC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C674D92385C0BD003AAC2D /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		A1C674DB2385FB14003AAC2D /* ToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A1C674C02385BE55003AAC2D /* AppDelegate.swift */,
 				A1C674C22385BE55003AAC2D /* SceneDelegate.swift */,
 				A1C674C72385BE55003AAC2D /* ContentView.swift */,
+				A1C674DB2385FB14003AAC2D /* ToDoItemView.swift */,
 				A1C674D92385C0BD003AAC2D /* ToDoItem.swift */,
 				A1C674C92385BE56003AAC2D /* Assets.xcassets */,
 				A1C674CE2385BE56003AAC2D /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C674C12385BE55003AAC2D /* AppDelegate.swift in Sources */,
+				A1C674DC2385FB14003AAC2D /* ToDoItemView.swift in Sources */,
 				A1C674C32385BE55003AAC2D /* SceneDelegate.swift in Sources */,
 				A1C674DA2385C0BD003AAC2D /* ToDoItem.swift in Sources */,
 				A1C674C82385BE55003AAC2D /* ContentView.swift in Sources */,
